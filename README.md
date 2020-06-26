@@ -6,5 +6,5 @@
 
 ## SW Expert Academy
 
-- [Programming Intermediate](https://github.com/kyngskwk/solving-problems/tree/master/SWExpertAcademy/%20Programming%20Intermediate)
+- [Programming Intermediate](https://github.com/kyngskwk/solving-problems/tree/master/SW%20Expert%20Academy/%20Programming%20Intermediate)
 
