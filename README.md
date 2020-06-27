@@ -1,10 +1,22 @@
 # :fire: Algorithm Problem Solving :boom:
 
-알고리즘 문제 풀이를 정리합니다.
+>  알고리즘 문제 풀이를 정리합니다.
 
 
 
-## SW Expert Academy
+### SW Expert Academy
 
-- [Programming Intermediate](https://github.com/kyngskwk/solving-problems/tree/master/SW%20Expert%20Academy/%20Programming%20Intermediate)
+- Course 
+  - Programming Intermediate
+  - Programming Advanced
 
+- Difficulty
+  - D1
+  - D2
+  - D3
+
+
+
+### 이론 정리
+
+- 최소 신장 트리(MST) - 1
