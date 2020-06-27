@@ -36,6 +36,10 @@
 
 ## 예제
 
+<img width="396" alt="q" src="https://user-images.githubusercontent.com/60081217/85918182-5690e700-b89b-11ea-8e2f-7af382e834bf.png">
+
+
+
 - 파이(부모) 와 key(가중치) 정보를 이용해서 인접 정점의 가중치를 저장해 나가면서 해결한다.
 - 파이와 key를 먼저 초기화 시킴 ( 무한대, None/-1)
 - 시작 정점 → key(시작점) = 0으로 셋팅
