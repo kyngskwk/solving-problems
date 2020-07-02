@@ -6,6 +6,8 @@
 
 ### SW Expert Academy
 
+> SWEA 에서 푼 문제를 코스별로, 난이도 별로 정리합니다.
+
 - Course 
   - Programming Intermediate
   - Programming Advanced
@@ -17,3 +19,6 @@
 
 
 
+### BEAKJOON
+
+> 백준에서 푼 문제를 정리합니다.
