@@ -12,6 +12,8 @@ for tc in range(int(input())):
     else:
         A += [P]
 
+print(A, B)
+
 A_max, B_max = 0, 0
 A, B = sorted(A), sorted(B)
 
