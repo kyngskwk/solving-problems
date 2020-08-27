@@ -16,6 +16,8 @@
   - D1
   - D2
   - D3
+  - D4
+  - D5
 
 
 
@@ -30,4 +32,6 @@
 > 카카오 기출, 프로그래머스에서 푼 문제를 정리합니다.
 
 - 2020 Kakao Intership
+- 2019 Kakao Intership
+- codility
 - 프로그래머스
