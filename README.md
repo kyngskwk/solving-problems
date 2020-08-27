@@ -31,7 +31,7 @@
 
 > 카카오 기출, 프로그래머스에서 푼 문제를 정리합니다.
 
-- 2020 Kakao Intership
-- 2019 Kakao Intership
+- 2020 Kakao Internship
+- 2019 Kakao Internship
 - codility
 - 프로그래머스
