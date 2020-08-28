@@ -1,30 +1,17 @@
-def bomb(now):
-    global stack, cnt
-    stack.append(now)
-    if len(stack) == 1:
-        return
-    else:
-        while len(stack) >= 2:
-            here = stack.pop()
-            front = stack.pop()
-            if front == here:
-                cnt += 2
-            else:
-                stack.append(front)
-                stack.append(here)
-                break
-
-
-stack = []
-cnt = 0
 def solution(board, moves):
-    global stack, cnt
-    new_board = list(map(list, zip(*board)))
+    stack = []
+    cnt = 0
+    length = len(board)
     for idx in moves:
-        for num in range(len(new_board)):
-            if new_board[idx-1][num] > 0:
-                now = new_board[idx - 1][num]
-                new_board[idx - 1][num] = 0
-                bomb(now)
+        for num in range(length):
+            if board[num][idx-1] > 0:
+                stack.append(board[num][idx-1])
+                board[num][idx-1] = 0
+                if len(stack) >= 2:
+                    if stack[-1] == stack[-2]:
+                        stack.pop()
+                        stack.pop()
+                        cnt += 2
                 break
     return cnt
+print(solution([[0,0,0,0,0],[0,0,1,0,3],[0,2,5,0,1],[4,2,4,4,2],[3,5,1,3,1]], [1,5,3,5,1,2,1,4]))
