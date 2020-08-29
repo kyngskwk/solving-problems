@@ -3,14 +3,14 @@ def find(idx, uv, user_id, banned_id):
     global stack
     if idx == len(banned_id):
         stack.append(uv)
-        # print(stack)
-        if uv in stack:
-            print(uv, stack)
-            return
-        else:
-            stack += [uv]
-            print(uv, stack)
         print(stack)
+        # if uv in stack:
+        #     print(uv, stack)
+        #     return
+        # else:
+        #     stack += [uv]
+        #     print(uv, stack)
+        # print(stack)
         return
 
     else:
