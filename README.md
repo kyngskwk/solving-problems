@@ -33,5 +33,7 @@
 
 - 2020 Kakao Internship
 - 2019 Kakao Internship
+- 2020 Kakao blind
+- 2019 Kakao blind
 - codility
 - 프로그래머스
