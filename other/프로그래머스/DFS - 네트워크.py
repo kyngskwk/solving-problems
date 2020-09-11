@@ -1,3 +1,5 @@
+
+
 def solution(n, computers):
     visited = [0] * n
     answer = 0
