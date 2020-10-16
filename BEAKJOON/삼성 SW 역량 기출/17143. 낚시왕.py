@@ -8,88 +8,33 @@ dx = [0, -1, 1, 0, 0] #위, 아래, 오른쪽, 왼쪽
 dy = [0, 0, 0, 1, -1]
 
 def move(temp, pan, i, j):
-    print(i, j)
     s, d, z = pan[i][j]
 
-    # if d == 1:
-    #     i += s
-    #     if i > R:
-    #         i += i//R
-    #         rot , next_i = i//R, i%R
-    #         # 넘으면 방향 바꾸기
-    #         if rot % 2 == 1:
-    #             d = 2
-    #             i = next_i
-    #         else:
-    #             i = R - next_i + 1
-    #
-    # elif d == 2:
-    #     i += s
-    #     if i > R:
-    #         i += i//R
-    #         rot , next_i = i//R, i%R
-    #         # 넘으면 방향 바꾸기
-    #         if rot % 2 == 1:
-    #             d = 1
-    #             i = R - next_i + 1
-    #         else:
-    #             i = next_i
-    #
-    # elif d == 3:
-    #     j += s
-    #     if j > C:
-    #         j += j//C
-    #         rot , next_j = j//C, j%C
-    #         # 넘으면 방향 바꾸기
-    #         if rot % 2 == 1:
-    #             d = 4
-    #             j = next_j
-    #         else:
-    #             j = R - next_j + 1
-    #
-    # elif d == 4:
-    #     j += s
-    #     if j > C:
-    #         j += j//C
-    #         rot , next_j = j//C, j%C
-    #         # 넘으면 방향 바꾸기
-    #         if rot % 2 == 1:
-    #             d = 3
-    #             j = R - next_j + 1
-    #         else:
-    #             j = next_j
+    if d == 1 or d == 2:
+        s = s % ((R-1) * 2)
+    else:
+        s = s % ((C-1) * 2)
 
-    # 시간 초
-    if d in [1, 2]:
-        i += s
-        while i > R:
-            i += 1
-            i -= R
+    for fish in range(s):
+        if pan[i + dx[d]][j + dy[d]] == -1:
             if d == 1:
                 d = 2
             elif d == 2:
                 d = 1
             elif d == 3:
                 d = 4
-            elif d == 4:
-                d = 3
-
-    if d == 1
-
-    for fish in range(s):
-        if pan[i+dx[d]][j+dy[d]] == -1:
-
+            else: d = 3
 
         i += dx[d]
         j += dy[d]
 
-    # 이미 있는 경우
+        # 이미 있는 경우
     if temp[i][j] != 0:
         if temp[i][j][2] < z:
             temp[i][j] = [s, d, z]
     else:
         temp[i][j] = [s, d, z]
-    pprint(temp)
+    # pprint(temp)
 
 
 
